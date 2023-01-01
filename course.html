@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="sub-header">
+            <nav>
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Our courses</h1>
+        </div>
+    </section>
+<!-- course -->
+<section class="course">
+    <h1>Courses we offer</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, nam!</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quod doloribus commodi modi perspiciatis maiores ab laudantium deserunt vel temporibus facere eaque blanditiis expedita delectus, placeat, possimus accusamus autem harum.</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quod doloribus commodi modi perspiciatis maiores ab laudantium deserunt vel temporibus facere eaque blanditiis expedita delectus, placeat, possimus accusamus autem harum.</p>
+        </div>
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quod doloribus commodi modi perspiciatis maiores ab laudantium deserunt vel temporibus facere eaque blanditiis expedita delectus, placeat, possimus accusamus autem harum.</p>
+        </div>
+    </div>
+</section>
+
+ <!-- Facilities -->
+ <section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, debitis!</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="/CollegeWebsite/images/lib.webp" alt="">
+            <h3>World class library</h3>
+        </div>
+        <div class="facilities-col">
+            <img src="/CollegeWebsite/images/spo.jpg" alt="">
+            <h3>World class Sports</h3>
+        </div>
+        <div class="facilities-col">
+            <img src="/CollegeWebsite/images/caf.jpg" alt="">
+            <h3>World class library</h3>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum non libero consequatur dolorem sit aspernatur a distinctio, nulla et atque pariatur corporis quo architecto. Vero amet totam aspernatur velit dolor.</p>
+
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-brands fa-facebook"></i>Naveen</p>
+    </footer>
+
+    <!-- javascript toggle menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+    
+</body>
+</html>

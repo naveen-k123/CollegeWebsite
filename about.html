@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="sub-header">
+            <nav>
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>About Us</h1>
+        </div>
+    </section>
+<!-- about us -->
+<section class="about-us">
+    <div class="row">
+        <div class="about-col">
+            <h1>We are worlds largest university</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit eaque eos sed? Architecto ipsa, hic possimus corporis fugit repudiandae expedita quia tenetur atque quisquam distinctio voluptatem? Voluptatibus excepturi, repellendus eius voluptate dolore quod non fugit sit. Vitae quisquam suscipit dolor!</p>
+            <a href="" class="hero-btn red-btn">Explore now</a>
+        </div>
+        <div class="about-col">
+            <img src="/CollegeWebsite/images/ab.jpg" alt="">
+        </div>
+
+    </div>
+</section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum non libero consequatur dolorem sit aspernatur a distinctio, nulla et atque pariatur corporis quo architecto. Vero amet totam aspernatur velit dolor.</p>
+
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-brands fa-facebook"></i>Naveen</p>
+    </footer>
+
+    <!-- javascript toggle menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+    
+</body>
+</html>

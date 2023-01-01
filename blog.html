@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <section>
+        <div class="sub-header">
+            <nav>
+                <a href="index.html"><img src="/images/logo2.png" alt=""></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-circle-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="course.html">COURSE</a></li>
+                        <li><a href="blog.html">BLOG</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <h1>Our certificate & online programe</h1>
+        </div>
+    </section>
+<!-- blog page  -->
+<div class="blog-content">
+    <div class="row">
+        <div class="blog-left">
+            <img src="/CollegeWebsite/images/cert.webp" alt="">
+            <h2>our certificate</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora repudiandae itaque voluptatibus iste tenetur fuga similique vel molestias suscipit sequi laboriosam, nostrum earum illum veritatis commodi quam explicabo minima.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora repudiandae itaque voluptatibus iste tenetur fuga similique vel molestias suscipit sequi laboriosam, nostrum earum illum veritatis commodi quam explicabo minima.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tempora repudiandae itaque voluptatibus iste tenetur fuga similique vel molestias suscipit sequi laboriosam, nostrum earum illum veritatis commodi quam explicabo minima.</p>
+            
+            <div class="comment-box">
+                <h3>Leave comment</h3>
+                <form action="" class="comment-form">
+                    <input type="text" placeholder="enter name">
+                    <input type="email" placeholder="enter email">
+                    <textarea placeholder="your comment" cols="30" rows="5"></textarea>
+                    <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post catagories</h3>
+            <div>
+                <span>Business analytics </span>
+                <span> 21</span>
+            </div>
+            <div>
+                <span> Data science</span>
+                <span> 28</span>
+            </div>
+            <div>
+                <span>Machine learning </span>
+                <span>15 </span>
+            </div>
+            <div>
+                <span>Computer science </span>
+                <span> 34</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum non libero consequatur dolorem sit aspernatur a distinctio, nulla et atque pariatur corporis quo architecto. Vero amet totam aspernatur velit dolor.</p>
+
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p>Made with <i class="fa-brands fa-facebook"></i>Naveen</p>
+    </footer>
+
+    <!-- javascript toggle menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px"
+        }
+    </script>
+    
+</body>
+</html>
